@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="marco">
+
+
+        <div style="display:flex; justify-content:right; right:50% ; margin-right: auto;">
+
+            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+                    type="module"></script>
+
+            <dotlottie-wc src="https://lottie.host/a53e1b4f-161e-45ba-839f-f8f7997d1613/J7wt3g4hIb.lottie"
+                          style="width: 300px;height: 300px"
+                          autoplay
+                          loop></dotlottie-wc>
+            <button id="botonSecreto"></button>
+
+        </div>
+
+        <div id="login-screen">
+            <h1 class="welcome">Bienvenida 💖</h1>
+            <h4 class="mensajito">¿Sabías que eres hermosa, amiga?</h4>
+
+
+            <div class="password-box">
+                <p>Introduce la contraseña</p>
+                <input type="password" id="passwordInput" />
+                <button class="btn primary" id="enterBtn" onclick="checkPassword()">Entrar</button>
+
+                <p id="errorMsg"></p>
+                <p class="hint" id="hint"></p>
+
+
+
+
+                
+
+                <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="music-buttons">
+
+                <div class="music-buttons">
+                    <button class="btn secondary" id="spotify">
+                        <span class="icon">
+                            <i class="fa-brands fa-spotify" style="font-size:48px; color:#1DB954;"></i>
+                        </span>
+                        <span class="label">Dale Play</span>
+                    </button>
+
+                    <button class="btn secondary" id="instagram">
+                        <span class="icon">
+                            <i class="fa-brands fa-instagram" style="font-size:48px; color:#E1306C;"></i>
+                        </span>
+                        <span class="label">Instagram</span>
+                    </button>
+
+
+                </div>
+
+
+                <script>
+                    function openSpotify() {
+                        window.open(
+                            "https://open.spotify.com/intl-es/track/0SKqL1RVYCRhvoJw16T1Vi?si=279cdf013d81445c",
+                            "_blank"
+                        );
+                    }
+                    // usar el id correcto y NO ejecutar la función aquí
+                    document
+                        .getElementById("spotify")
+                        .addEventListener("click", openSpotify);
+                </script>
+                <script>
+                    function openinstagram() {
+                        window.open(
+                            "https://www.instagram.com/caleb__bello?igsh=MWcxcXB1cWw2MTR5Zw==", "_blank"
+                        );
+                    }
+
+
+                    // usar el id correcto y NO ejecutar la función aquí
+                    document
+                        .getElementById("instagram")
+                        .addEventListener("click", openinstagram);
+                </script>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

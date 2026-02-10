@@ -1,0 +1,212 @@
+﻿﻿* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#ffe6f0, #fff);
+    background-color: rosybrown;
+    text-align: center;
+
+}
+
+.marco {
+    min-height: 100vh;
+    border: 10px solid #ff9ac4; /* grosor y color del marco */
+    box-sizing: border-box; /* hace que el borde no rompa el layout */ /* [web:5][web:16] */
+}
+/* Pantalla inicial */
+#login-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+}
+
+.welcome {
+    position: absolute;
+    top: 30px;
+    font-family: 'MS Gothic', 5em;
+    font-size: 5em;
+    font-style: italic;
+}
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-soft: #dbeafe;
+    --text-on-primary: #ffffff;
+}
+
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px; /* pill */
+    border: none;
+    font: 500 0.95rem system-ui;
+    cursor: pointer;
+    background: #111827;
+    color: #f9fafb;
+    transition: background-color .25s ease, color .25s ease, box-shadow .25s ease, transform .15s ease;
+}
+#botonSecreto {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px; /* hazlo grande a tu gusto */
+    height: 150px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0; /* totalmente invisible */
+    z-index: 9999; /* por encima de todo */
+}
+
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+    }
+
+    .btn.primary:hover {
+        background: linear-gradient(135deg, #1d4ed8, #4338ca);
+    }
+
+    .btn.secondary:hover {
+        background: #1f2937;
+    }
+    
+
+
+    .btn.ghost:hover {
+        background: var(--primary-soft);
+        border-color: var(--primary);
+        color: var(--primary-dark);
+    }
+
+    .btn:focus-visible {
+        outline: 2px solid #bfdbfe;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn:active {
+        transform: translateY(0); /* vuelve a “bajar” */
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
+    }
+
+    .btn.primary {
+        background: linear-gradient(135deg, #2563eb, #4f46e5);
+        color: var(--text-on-primary);
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn.secondary {
+        background: #111827;
+        color: #e5e7eb;
+        border: 1px solid #374151;
+        padding-top: 10px;
+        position:relative;
+        /* quitar position, bottom y left */
+    }
+
+    .music-buttons {
+    display: flex;
+    gap: 1rem; /* separación entre Spotify e Instagram */
+    justify-content: center;
+    margin-top: 2rem;
+    }
+
+    .btn.ghost {
+        background: transparent;
+        color: #1f2933;
+        border: 1px solid #cbd5f5;
+    }
+
+#spotify {
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+}
+
+#instagram {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+}
+
+
+
+
+
+
+.password-box {
+    background: white;
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s;
+}
+
+    .password-box input {
+        padding: 10px;
+        font-size: 1em;
+        margin: 10px 0;
+        width: 200px;
+    }
+
+    .password-box button {
+        padding: 10px 10px;
+        cursor: pointer;
+        
+    }
+
+#errorMsg {
+    color: red;
+}
+
+.hint {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Contenido */
+#content {
+    min-height: 200vh;
+    padding-top: 100px;
+}
+
+
+.buttons {
+    margin: 20px;
+}
+
+#noBtn {
+    position: relative;
+}
