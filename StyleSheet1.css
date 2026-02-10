@@ -13,10 +13,11 @@ body {
 
 .marco {
     min-height: 100vh;
-    border: 10px solid #ff9ac4; /* grosor y color del marco */
-    box-sizing: border-box; /* hace que el borde no rompa el layout */ /* [web:5][web:16] */
+    border: 20px solid #ff9ac4; 
+    box-sizing: border-box; 
+    box-shadow: 0 0 20px rgba(255, 154, 196, 0.5); 
 }
-/* Pantalla inicial */
+
 #login-screen {
     height: 100vh;
     display: flex;
@@ -27,10 +28,10 @@ body {
 }
 
 .welcome {
-    position: absolute;
-    top: 30px;
+    position: relative;
+    top: -190px;
     font-family: 'MS Gothic', 5em;
-    font-size: 5em;
+    font-size: 90px;
     font-style: italic;
 }
 
@@ -72,8 +73,8 @@ body {
 
 
     .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px #2563eb;
     }
 
     .btn.primary:hover {
@@ -99,7 +100,7 @@ body {
     }
 
     .btn:active {
-        transform: translateY(0); /* vuelve a “bajar” */
+        transform: translateY(0); 
         box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
     }
 
@@ -115,7 +116,7 @@ body {
         border: 1px solid #374151;
         padding-top: 10px;
         position:relative;
-        /* quitar position, bottom y left */
+        
     }
 
     .music-buttons {
@@ -131,7 +132,7 @@ body {
         border: 1px solid #cbd5f5;
     }
 
-#spotify {
+#youtube {
     position: fixed;
     bottom: 20px;
     left: 80px;
@@ -143,6 +144,14 @@ body {
     right: 80px;
 }
 
+#spotify{
+    position: fixed;
+    bottom: 20px;
+    
+}
+
+
+
 
 
 
@@ -150,11 +159,11 @@ body {
 
 .password-box {
     background: white;
-    padding: 30px;
+    padding: 70px;
     margin-right: 10px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    animation: fadeIn 1s;
+    box-shadow: 0 10px 600px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s;
 }
 
     .password-box input {
