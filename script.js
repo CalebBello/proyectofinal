@@ -1,4 +1,4 @@
-﻿const correctPassword = "tiramisu";
+﻿﻿const correctPassword = "gei";
 let attempts = 0;
 
 // 1) Configuramos el botón cuando carga la página
@@ -25,11 +25,11 @@ function checkPassword() {
         errorMsg.textContent = "Contraseña incorrecta";
 
         if (attempts === 1) {
-            hint.textContent = "Dulce como tú";
+            hint.textContent = "clase pájaro";
         } else if (attempts === 2) {
-            hint.textContent = "Casi pero sin tilde y en minúsculas";
+            hint.textContent = "CYo sabía que eras un bujarra";
         } else if (attempts >= 3) {
-            hint.textContent = "Pregúntale al jefe 😠";
+            hint.textContent = "Definitivamente es marica😻🌈";
         }
     }
 }
